@@ -61,3 +61,36 @@ Sample Output 0
 100.0
 
 */
+
+/* RESOLUCAO
+
+/// Test Cases:
+/// 
+/// 20 -2 -> 100.0
+/// 40 -1 -> 800.0
+/// 120 -30 -> 240.0
+/// 80 -10 -> 320.0
+/// 9 -3 -> 13.5
+/// 60 -15 -> 120.0
+/// 40 -5 -> 160.0
+/// 78 -32 -> 95.0625
+
+import 'dart:io';
+
+void main(List<String> arguments) {
+  // Nao deletar
+  final line = stdin.readLineSync() ?? '';
+  if (line.isEmpty) exit(0);
+  final inputs = line.split(' ');
+
+  // Variaveis iniciais
+  final velocidade = int.parse(inputs[0]);
+  final aceleracao = int.parse(inputs[1]);
+
+  // Escreva seu programa a partir daqui
+  final distancia = (-(velocidade * velocidade) / (2 * aceleracao));
+  print(distancia);
+}
+
+
+*/
